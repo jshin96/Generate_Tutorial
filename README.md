@@ -1,7 +1,7 @@
 # Generate_Tutorial
 
 ### Gridpack
-'''
+```
  First make input cards 
     XXX_proc_card.dat
     XXX_run_card.dat
@@ -14,9 +14,9 @@
  ./gridpack_genrateion.sh <XXX> <directory containing cards relative to current location>
  This will generate gridpack tarball which should be moved to lxplus:eos/user/s/shin/Gridpacks which is available for the public to access to run generation later
 check cernbox.cern.ch
-'''
+```
 ### Generation Step
- '''
+```
  initial setup
   
 cmsrel CMSSW_XX_YY_ZZ 
@@ -39,6 +39,6 @@ cd ..
 scram b
 
 Now you need the configuration file. Look at Hadronizer_tt012j_Vcb_NLO_CP5_FXFX_cff.py as aa sample  
-'''
+```
 
 
