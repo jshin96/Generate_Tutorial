@@ -41,4 +41,29 @@ scram b
 Now you need the configuration file. Look at Hadronizer_tt012j_Vcb_NLO_CP5_FXFX_cff.py as aa sample  
 ```
 
+### SKFlatMaker
+'''
+To run SKFlatMaker, KNU I already set the directory needed for UL and PreLegacy. 
+Before you run MakeCrab.py to make the crab file, make sure you have the correct input DAS of sample you want to make.
+You can search DAS name in SKFlatMaker?SKFlatMaker/scripts/CRAB3 using 
 
+EX)  dasgoclient --query "/ttZJets*/RunIISummer*UL*/MINIAODSIM"
+
+This will give you the list of DAS names that match what you put in.
+where the "" denotes the name of sample you want to look for, the example is looking for ttZJets sample for UL MiniAOD
+After that, you also need to make sure you have the right weight for the sample. 
+Go to SKFlatMaker?SKFlatMaker/scripts/Weight and run
+
+python getLog.py /ttZJets_TuneCP5_13TeV_madgraphMLM_pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1/MINIAODSIM
+
+Where the example DAS name was directly copied and pasted from dasgoclient 
+This will make a log file containing all the weights that needs to be applied to the sample. 
+You then need to run 
+
+python parseLog.py logs/ttZJets_TuneCP5_13TeV_madgraphMLM_pythia8__RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1.log 
+
+Which will look for the factors that needs to be applied for the sample and make a txt file in Weight/data/ttZJets_TuneCP5_13TeV_madgraphMLM_pythia8__RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1.log 
+(This could fail, which case needs to be manually made. The necessary values are Scale, PDF, AlphaS, AlphaSScale)
+After the weight txt file is made, edit the corresponding year txt file eg) 2018_MC.txt, inserting the name of DAS file you want to run is in the file unstashed. and then run MakeCrab.py in CRAB3. 
+This will turn in the command line and make crab python file in Run2UltraLegacy_v2 directory. 
+'''
