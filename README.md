@@ -42,7 +42,7 @@ Now you need the configuration file. Look at Hadronizer_tt012j_Vcb_NLO_CP5_FXFX_
 ```
 
 ### SKFlatMaker
-'''
+```
 To run SKFlatMaker, KNU I already set the directory needed for UL and PreLegacy. 
 Before you run MakeCrab.py to make the crab file, make sure you have the correct input DAS of sample you want to make.
 You can search DAS name in SKFlatMaker?SKFlatMaker/scripts/CRAB3 using 
@@ -66,4 +66,4 @@ Which will look for the factors that needs to be applied for the sample and make
 (This could fail, which case needs to be manually made. The necessary values are Scale, PDF, AlphaS, AlphaSScale)
 After the weight txt file is made, edit the corresponding year txt file eg) 2018_MC.txt, inserting the name of DAS file you want to run is in the file unstashed. and then run MakeCrab.py in CRAB3. 
 This will turn in the command line and make crab python file in Run2UltraLegacy_v2 directory. 
-'''
+```
