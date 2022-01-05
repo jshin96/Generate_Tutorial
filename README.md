@@ -41,7 +41,8 @@ scram b
 Now you need the configuration file. Look at Hadronizer_tt012j_Vcb_NLO_CP5_FXFX_cff.py as aa sample  
 You can also check https://cms-pdmv.cern.ch/mcm to find a sample similar to yours adn use their command and fragment file. 
 
-Now make crab file to submit this on crab. 
+This will give a file that can be used in crab, but you need a crab submit file to submit the file that was just produced. 
+look at submit_crab_gen_py
 ```
 
 ### SKFlatMaker
