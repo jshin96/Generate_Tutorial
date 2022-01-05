@@ -38,7 +38,7 @@ git clone .../GenProduction
 cd ..
 scram b
 
-Now you need the configuration file. Look at Hadronizer_tt012j_Vcb_NLO_CP5_FXFX_cff.py as aa sample  
+Now you need the configuration file. Look at run_crab_UL_LHEGEN.py as aa sample  
 You can also check https://cms-pdmv.cern.ch/mcm to find a sample similar to yours adn use their command and fragment file. 
 
 This will give a file that can be used in crab, but you need a crab submit file to submit the file that was just produced. 
