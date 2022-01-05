@@ -43,6 +43,11 @@ You can also check https://cms-pdmv.cern.ch/mcm to find a sample similar to your
 
 This will give a file that can be used in crab, but you need a crab submit file to submit the file that was just produced. 
 look at submit_crab_gen_py
+
+Now submit 
+crab submit <submit_crab_file>
+crab status <crab_project/process name>
+crab resubmit <crab_project/process name>
 ```
 
 ### SKFlatMaker
