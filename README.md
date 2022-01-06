@@ -34,12 +34,18 @@ scram b -j 6
 
  now clone the repository
 mkdir Configuration && cd Configuration
-git clone .../GenProduction
-cd ..
-scram b
+mkdir GenProduction && cd GenProduction
+mkdir python && cd python
 
 Now you need the configuration file. Look at TOP-RunIISummer19UL18_No_decay.py as aa sample  
-https://cms-pdmv.cern.ch/mcm to find a sample similar to yours and use their command and fragment file. 
+https://cms-pdmv.cern.ch/mcm to find a sample similar to yours and use their command and fragment file.
+
+
+then put the configuration file in here
+go back to src
+scram b
+
+ 
 
 This will give a file that can be used in crab, but you need a crab submit file to submit the file that was just produced. 
 look at submit_crab_gen_py
