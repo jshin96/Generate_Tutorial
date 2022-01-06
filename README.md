@@ -37,10 +37,10 @@ mkdir Configuration && cd Configuration
 mkdir GenProduction && cd GenProduction
 mkdir python && cd python
 
-Now you need the configuration file. Look at TOP-RunIISummer19UL18_No_decay.py as aa sample  
+Now you need the configuration file. Look at TOP-RunIISummer19UL18_No_decay.py as a sample (you can produce using cmsDriver.py command) 
 https://cms-pdmv.cern.ch/mcm to find a sample similar to yours and use their command and fragment file.
 
-
+check that the config uses proper "run_generic_tarball_XXXX/sh"
 then put the configuration file in here
 go back to src
 scram b
