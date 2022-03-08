@@ -58,6 +58,11 @@ crab resubmit <crab_project/process name>
 
 ### SKFlatMaker
 ```
+
+
+First SKFlatMaker and source setup.sh.
+
+
 To run SKFlatMaker, KNU I already set the directory needed for UL and PreLegacy. 
 Before you run MakeCrab.py to make the crab file, make sure you have the correct input DAS of sample you want to make.
 You can search DAS name in SKFlatMaker?SKFlatMaker/scripts/CRAB3 using 
